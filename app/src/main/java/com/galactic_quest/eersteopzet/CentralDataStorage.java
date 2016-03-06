@@ -23,7 +23,7 @@ public class CentralDataStorage {
     }
 
     /**
-     * This is anjjj internal class that handles the creation of all database tables
+     * This is an internal class that handles the creation of all database tables
      */
     class SimpleSQLiteOpenHelper extends SQLiteOpenHelper {
         SimpleSQLiteOpenHelper(Context context) {
