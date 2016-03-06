@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.galactic_quest.eersteopzet.ResourcesScreen">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:id="@+id/ResourcesRowString">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Score"
+                android:id="@+id/ResourcesScoreString"
+                android:textColor="#3336ab"
+                android:textSize="14dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Crystal"
+                android:id="@+id/ResourcesCrystalString"
+                android:textColor="#3336ab"
+                android:textSize="14dip"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false"
+                android:layout_above="@+id/ResourcesTickString"
+                android:layout_alignParentLeft="true"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Metal"
+                android:id="@+id/ResourcesMetalString"
+                android:textColor="#3336ab"
+                android:textSize="14dip"
+                android:layout_above="@+id/ResourcesScoreString"
+                android:layout_alignParentLeft="true"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Tick"
+                android:id="@+id/ResourcesTickString"
+                android:textColor="#3336ab"
+                android:textSize="14dip"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/ResourcesMetalString"
+                android:layout_alignParentLeft="true"
+                android:layout_column="3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ResourcesRowVars">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ScoreVar"
+                android:id="@+id/ResourcesScoreVar"
+                android:textColor="#3336ab"
+                android:textSize="14dip"
+                android:layout_column="0"
+                android:layout_below="@+id/ResourcesTickVar"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CrystalVar"
+                android:id="@+id/ResourcesCrystalVar"
+                android:textColor="#3336ab"
+                android:textSize="14dip"
+                android:layout_column="1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MetalVar"
+                android:id="@+id/ResourcesMetalVar"
+                android:textColor="#3336ab"
+                android:textSize="14dip"
+                android:layout_above="@+id/ResourcesCrystalVar"
+                android:layout_alignParentLeft="true"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TickVar"
+                android:id="@+id/ResourcesTickVar"
+                android:textColor="#3336ab"
+                android:textSize="14dip"
+                android:layout_column="3"
+                android:layout_below="@+id/tableLayout"
+                android:layout_alignEnd="@+id/tableLayout" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Explore Crystal Mines: C 100"
+        android:id="@+id/resourcesExploreCrystalMines"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Explore Metal Mines: M 100"
+        android:id="@+id/resourcesExploreMetalMines"
+        android:layout_below="@+id/resourcesExploreCrystalMines"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="#"
+        android:id="@+id/resourcesTextViewExploreCrystalMines"
+        android:layout_alignTop="@+id/resourcesExploreCrystalMines"
+        android:layout_toEndOf="@+id/resourcesExploreCrystalMines"
+        android:inputType="number|none"
+        android:maxLength="3"
+        android:digits="0123456789"
+        android:editable="true"
+        android:enabled="true" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="#"
+        android:id="@+id/resourcesTextViewExploreMetalMines"
+        android:layout_below="@+id/resourcesExploreCrystalMines"
+        android:layout_toEndOf="@+id/resourcesExploreMetalMines"
+        android:inputType="number|none"
+        android:maxLength="3"
+        android:digits="0123456789"
+        android:editable="true"
+        android:enabled="true" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Crystal Mines: "
+        android:id="@+id/StringCrytalMines"
+        android:layout_above="@+id/resourcesTextViewExploreMetalMines"
+        android:layout_toEndOf="@+id/resourcesTextViewExploreCrystalMines" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Metal Mines: "
+        android:id="@+id/StringMetalMines"
+        android:layout_alignTop="@+id/resourcesTextViewExploreMetalMines"
+        android:layout_alignStart="@+id/StringCrytalMines" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="# Crystal"
+        android:id="@+id/resourcesNumberofCrystalMines"
+        android:layout_alignTop="@+id/StringCrytalMines"
+        android:layout_toEndOf="@+id/StringCrytalMines" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="# Metal"
+        android:id="@+id/resourcesNumberofMetalMines"
+        android:layout_below="@+id/resourcesNumberofCrystalMines"
+        android:layout_toEndOf="@+id/StringCrytalMines" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tick"
+        android:id="@+id/resourcestickbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

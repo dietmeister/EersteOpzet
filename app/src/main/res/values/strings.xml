@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EersteOpzet</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base_screen">BaseScreen</string>
+    <string name="title_activity_leader_board">LeaderBoard</string>
+    <string name="title_activity_resources_screen">ResourcesScreen</string>
+    <string name="title_activity_fleet_screen">FleetScreen</string>
+    <string name="title_activity_news_screen">NewsScreen</string>
+    <string name="title_activity_factory_screen">FactoryScreen</string>
+</resources>

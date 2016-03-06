@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.galactic_quest.eersteopzet" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BaseScreen"
+            android:label="@string/title_activity_base_screen" >
+        </activity>
+        <activity
+            android:name=".LeaderBoard"
+            android:label="@string/title_activity_leader_board" >
+        </activity>
+        <activity
+            android:name=".ResourcesScreen"
+            android:label="@string/title_activity_resources_screen" >
+        </activity>
+        <activity
+            android:name=".FleetScreen"
+            android:label="@string/title_activity_fleet_screen" >
+        </activity>
+        <activity
+            android:name=".NewsScreen"
+            android:label="@string/title_activity_news_screen" >
+        </activity>
+        <activity
+            android:name=".FactoryScreen"
+            android:label="@string/title_activity_factory_screen" >
+        </activity>
+
+        <service android:name=".CoreFunctionality" />
+    </application>
+
+</manifest>
